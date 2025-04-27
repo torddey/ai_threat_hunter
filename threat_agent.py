@@ -21,9 +21,9 @@ def get_mitre_attack_data(query):
 
 
 def send_slack_alert(message):
-    webhook_url = "https://hooks.slack.com/services/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"
+    slack_webhook_url = os.getenv("SLACK_WEBHOOK_URL")
     payload = {"text": message}
-    requests.post(webhook_url, json=payload)
+    requests.post(slack_webhook_url, json=payload)
 
 
 def analyze_logs(log_text):
