@@ -23,7 +23,7 @@ This project is an AI-powered cybersecurity agent that:
 git clone https://github.com/YOUR-USERNAME/ai-threat-hunter.git
 cd ai-threat-hunter
 pip install -r requirements.txt
-
+```
 
 ## Environment Variables
 GROQ_API_KEY=your-groq-api-key-here
